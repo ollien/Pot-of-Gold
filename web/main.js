@@ -97,7 +97,7 @@ function hexIncrement(hexValue){
 var v = ""
 var choices = "123456789ABCDEF"
 for (var i=0; i<6; i++){
-	v+=choices[Math.floor(Math.random()*16)]
+	v+=choices[Math.floor(Math.random()*15)]
 }
 prev=""
 $(document).ready(function(){
