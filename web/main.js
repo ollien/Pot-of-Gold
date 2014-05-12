@@ -59,8 +59,12 @@ function hexIncrement(hexValue){
 	var finalValue=reverseString(tempValue)
 	return finalValue
 }
-var v="000000"
-for (var i=0; i<100; i++){
-	v=hexIncrement(v)
-	console.log(v)
-}
+var v="F8301E"
+$(document).ready(function(){
+	for (var i=0; i<1000; i++){
+		v=hexIncrement(v)
+		$('body').append("<span style=\" display:inline-block; height:100px; width:auto; background-color:"+v+";\">YOOYOY</span><br />")
+		console.log("<span \"style=height:100px; width:auto; color:"+v+";\"/>")
+		console.log(v)
+	}	
+});

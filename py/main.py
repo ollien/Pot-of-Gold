@@ -43,7 +43,7 @@ choices="0123456789ABCDEF"
 hexValue=""
 for i in range(6):
 	hexValue+=random.choice(choices)
-for i in range (100):
+for i in range (10000):
 	hexValue=incrementHex(hexValue)
 	print hexValue
 			
